@@ -3,13 +3,21 @@ import time
 import sys
 import os
 
-# Define a function to play an mp3 file using the command line
-def play_mp3(file_path):
-    # Use the system's default command to play the mp3 file
-    os.system(f"start {file_path}")
+def choice ():
+  choices =  ['7','🍋','🍒','🍊','🍇','🍉','🍌','🍓','bar','wild','jackpot']
+  choice_main = random.randint(0,7)
+  choice_higher = random.getrandbits(1)
+  if choice_higher == 1:
+    add = random.randint(1,3)
+    choice_main += add
+  return choice_main
 
-# Call the function to play "song.mp3"
-play_mp3('/home/codespace/codespaces-electrictboggaloo/Untitled song(4).mp3')
+def get_values():
+  choice1 = choice ()
+  choice2 = choice ()
+  choice3 = choice ()
 
-# Print a success message
-print("Playing song.mp3")
+def main ():
+  choices =  ['7','🍋','🍒','🍊','🍇','🍉','🍌','🍓','bar','wild','jackpot']
+  choice_main = random.randint(0,10)
+  print
