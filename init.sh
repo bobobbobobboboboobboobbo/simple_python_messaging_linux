@@ -11,10 +11,10 @@ read -p "Enter (1) for server or (2) for client: " user_input
 # Check if the input is valid
 if [[ $user_input -eq 1 ]]; then
   # Run the server code
-  python server.py
+  python3 server.py
 elif [[ $user_input -eq 2 ]]; then
   # Run the client code
-  python client.py
+  python3 client.py
 else
   echo "Invalid input. Please enter 1 or 2."
 fi
